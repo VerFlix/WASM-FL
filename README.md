@@ -11,4 +11,4 @@ install WASI SDK: https://github.com/WebAssembly/wasi-sdk
 
 compile the .c files to .a static libraries. You can use the setup file for that. Make sure $CC is your clang compiler.
 
-compile your .c pr .cpp to .wasm using your clang compiler with -L/path/to/library/files -IL/path/to/include/files and -l[library] arguments.
+compile your .c pr .cpp to .wasm using your clang compiler with --target=wasm32-wasip2 --sysroot=/path/to/wasi-sdk/wasi-sdk-X.Y/share/wasi-sysroot -L/path/to/library/files -IL/path/to/include/files and -l[library] arguments.
